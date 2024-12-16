@@ -1,0 +1,9 @@
+@forward 'mixin';
+@forward 'variables';
+//all variables can be used except active
+// @forward 'variables' hide $active;
+
+// opposite behavior, all hidden one shown
+// @forward 'variables' show $active;
+
+/*forward for multiple imports */

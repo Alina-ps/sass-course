@@ -1,0 +1,27 @@
+// @use '../utils/mixin';
+// @use '../utils/variables' as v; // rename file variables to v
+
+@use '../utils/styles-forwarded' as frwd;
+
+.badge {
+  @include frwd.badge-base();
+  //   @include mixin.badge-base();
+
+  color: frwd.$badge-cl;
+  //   color: v.$badge-cl;
+}
+
+.badge-completed {
+  background-color: frwd.$completed;
+  // background-color: v.$completed;
+}
+
+.badge-ended {
+  background-color: frwd.$ended;
+  //   background-color: v.$ended;
+}
+
+.badge-active {
+  background-color: frwd.$active;
+  //   background-color: v.$active;
+}
